@@ -1,0 +1,1505 @@
+<?xml version="1.0"?>
+<root>
+ <n name="worker_version">3</n>
+ <a name="workflows_as_text" size="2">
+  <an name="0">
+   <g name="value">
+    <n name="module_type">gt_project</n>
+    <n name="project_name" />
+    <n name="is_independent">false</n>
+    <n name="wf_name">Rel_perm</n>
+    <n name="wf_as_string">#  Этот файл был сгенерирован тНавигатор v23.4-5689-g1082f6c.
+#  Copyright (C) Рок Флоу Динамикс 2005-2024.
+#  Все права защищены.
+
+# This file is MACHINE GENERATED! Do not edit.
+
+#api_version=v0_0_117
+
+from __main__.tnav.workflow import *
+from tnav_debug_utilities import *
+from datetime import datetime, timedelta
+
+
+declare_workflow (workflow_name="Rel_perm",
+      variables=[{"name" : "GRID_NAME", "type" : "string", "min" : 0, "max" : 5, "values" : ["GDM_with_petro_2023-09-04", "Ach_ungkm_smooth", "Cutted", "Cuted", "Achimgas", "ASHGAS"], "distribution_type" : "Discrete", "discrete_distr_values" : [0, 1, 2, 3, 4, 5], "discrete_distr_probabilities" : [16.66, 16.67, 16.67, 16.66, 16.67, 16.67], "initial_distribution" : [], "truncated_mean" : 0, "truncated_sigma" : 0, "mode" : 0}, {"name" : "GOC_ACH4", "type" : "real", "min" : 3668, "max" : 3766, "values" : [], "distribution_type" : "Uniform", "discrete_distr_values" : [], "discrete_distr_probabilities" : [], "initial_distribution" : [], "truncated_mean" : 0, "truncated_sigma" : 0, "mode" : 0}, {"name" : "GOC_ACH3", "type" : "real", "min" : 3726, "max" : 3786, "values" : [], "distribution_type" : "Uniform", "discrete_distr_values" : [], "discrete_distr_probabilities" : [], "initial_distribution" : [], "truncated_mean" : 0, "truncated_sigma" : 0, "mode" : 0}, {"name" : "WOC_ACH51", "type" : "real", "min" : 3960, "max" : 4020, "values" : [], "distribution_type" : "Uniform", "discrete_distr_values" : [], "discrete_distr_probabilities" : [], "initial_distribution" : [], "truncated_mean" : 0, "truncated_sigma" : 0, "mode" : 0}, {"name" : "GOC_ACH51", "type" : "real", "min" : 3795, "max" : 3880, "values" : [], "distribution_type" : "Uniform", "discrete_distr_values" : [], "discrete_distr_probabilities" : [], "initial_distribution" : [], "truncated_mean" : 0, "truncated_sigma" : 0, "mode" : 0}, {"name" : "GOC_ACH52", "type" : "real", "min" : 3775, "max" : 3835, "values" : [], "distribution_type" : "Uniform", "discrete_distr_values" : [], "discrete_distr_probabilities" : [], "initial_distribution" : [], "truncated_mean" : 0, "truncated_sigma" : 0, "mode" : 0}, {"name" : "SWCR_PER", "type" : "real", "min" : 0.1, "max" : 0.32, "values" : [], "distribution_type" : "Normal", "discrete_distr_values" : [], "discrete_distr_probabilities" : [], "initial_distribution" : [], "truncated_mean" : 0, "truncated_sigma" : 0, "mode" : 0}, {"name" : "KRWR", "type" : "real", "min" : 0.02, "max" : 0.238, "values" : [], "distribution_type" : "Log-normal", "discrete_distr_values" : [], "discrete_distr_probabilities" : [], "initial_distribution" : [], "truncated_mean" : 0, "truncated_sigma" : 0, "mode" : 0}, {"name" : "KRWU", "type" : "real", "min" : 0.467, "max" : 0.97, "values" : [], "distribution_type" : "Triangular", "discrete_distr_values" : [], "discrete_distr_probabilities" : [], "initial_distribution" : [], "truncated_mean" : 0, "truncated_sigma" : 0, "mode" : 0}, {"name" : "SWCR_PER2", "type" : "real", "min" : 0.1, "max" : 0.3, "values" : [], "distribution_type" : "Uniform", "discrete_distr_values" : [], "discrete_distr_probabilities" : [], "initial_distribution" : [], "truncated_mean" : 0, "truncated_sigma" : 0, "mode" : 0}, {"name" : "STRAT", "type" : "string", "min" : 0, "max" : 1, "values" : ["UNGKM_RAPORT_GDI", "UNGKM_GDI"], "distribution_type" : "Discrete", "discrete_distr_values" : [0, 1], "discrete_distr_probabilities" : [50, 50], "initial_distribution" : [], "truncated_mean" : 0, "truncated_sigma" : 0, "mode" : 0}])
+
+
+Rel_perm_variables = {
+"GRID_NAME" : "Cuted",
+"GOC_ACH4" : 3751,
+"GOC_ACH3" : 3751,
+"WOC_ACH51" : 4012,
+"GOC_ACH51" : 3799,
+"GOC_ACH52" : 3799,
+"SWCR_PER" : 0.2,
+"KRWR" : 0.12,
+"KRWU" : 0.62,
+"SWCR_PER2" : 0.23,
+"STRAT" : "UNGKM_GDI"
+}
+
+def Rel_perm (variables = Rel_perm_variables):
+    pass
+    check_launch_method ()
+
+    GRID_NAME = variables["GRID_NAME"]
+    GOC_ACH4 = variables["GOC_ACH4"]
+    GOC_ACH3 = variables["GOC_ACH3"]
+    WOC_ACH51 = variables["WOC_ACH51"]
+    GOC_ACH51 = variables["GOC_ACH51"]
+    GOC_ACH52 = variables["GOC_ACH52"]
+    SWCR_PER = variables["SWCR_PER"]
+    KRWR = variables["KRWR"]
+    KRWU = variables["KRWU"]
+    SWCR_PER2 = variables["SWCR_PER2"]
+    STRAT = variables["STRAT"]
+
+    begin_user_imports ()
+    end_user_imports ()
+
+    begin_wf_item (index = 1, name = "PERMX")
+    grid_property_calculator (mesh=find_object (name=resolve_variables_in_string (string_with_variables="@GRID_NAME@",
+          variables=variables),
+          type="Grid3d"),
+          result_grid_property=find_object (name="PERMX",
+          type="Grid3dProperty"),
+          discrete_output=False,
+          use_filter=False,
+          user_cut_for_filter=find_object (name="ZONE",
+          type="Grid3dProperty"),
+          filter_comparator=Comparator (rule="not_equals",
+          value=0),
+          formula="PetroTypes==1",
+          variables=variables)
+    end_wf_item (index = 1)
+
+
+    if False:
+        begin_wf_item (index = 2, collapsed = True)
+        run_project_workflow (project_type = "gt_project",
+              project_name = "",
+              workflow = "mult_creater",
+              variable_types = {"GRID" : "string", "MUTL_TABLE_NAME" : "string"},
+              variables_object = {
+        "GRID" : "Cuted",
+        "MUTL_TABLE_NAME" : "MULT_OFP"
+        })
+        end_wf_item (index = 2)
+
+
+    if False:
+        begin_wf_item (index = 3, name = "PERMX")
+        grid_property_calculator (mesh=find_object (name=resolve_variables_in_string (string_with_variables="@GRID_NAME@",
+              variables=variables),
+              type="Grid3d"),
+              result_grid_property=find_object (name="PERMX",
+              type="Grid3dProperty"),
+              discrete_output=False,
+              use_filter=False,
+              user_cut_for_filter=find_object (name="ZONE",
+              type="Grid3dProperty"),
+              filter_comparator=Comparator (rule="not_equals",
+              value=0),
+              formula="PERMX*MULT_OFP",
+              variables=variables)
+        end_wf_item (index = 3)
+
+
+    begin_wf_item (index = 4, name = "Газ-вода")
+    workflow_folder ()
+    if True:
+        pass
+
+
+
+        begin_wf_item (index = 5, name = "SWL")
+        grid_property_calculator (mesh=find_object (name=resolve_variables_in_string (string_with_variables="@GRID_NAME@",
+              variables=variables),
+              type="Grid3d"),
+              result_grid_property=find_object (name="SWL",
+              type="Grid3dProperty"),
+              discrete_output=False,
+              use_filter=False,
+              user_cut_for_filter=find_object (name="ZONE",
+              type="Grid3dProperty"),
+              filter_comparator=Comparator (rule="not_equals",
+              value=0),
+              formula="(PetroTypes==1)*3.4701*exp(-13.63*PORO)+\n(PetroTypes==2)*2.623*exp(-9.052*PORO)+(PetroTypes==3)*3.4701*exp(-13.63*PORO)+(PetroTypes==4)*2.623*exp(-9.052*PORO)",
+              variables=variables)
+        end_wf_item (index = 5)
+
+
+        begin_wf_item (index = 6, name = "KRGU")
+        grid_property_calculator (mesh=find_object (name=resolve_variables_in_string (string_with_variables="@GRID_NAME@",
+              variables=variables),
+              type="Grid3d"),
+              result_grid_property=find_object (name="KRGU",
+              type="Grid3dProperty"),
+              discrete_output=False,
+              use_filter=False,
+              user_cut_for_filter=find_object (name="ZONE",
+              type="Grid3dProperty"),
+              filter_comparator=Comparator (rule="not_equals",
+              value=0),
+              formula=" 0.7977*PERMX-0.5825",
+              variables=variables)
+        end_wf_item (index = 6)
+
+
+        begin_wf_item (index = 7, name = "SGCR")
+        grid_property_calculator (mesh=find_object (name=resolve_variables_in_string (string_with_variables="@GRID_NAME@",
+              variables=variables),
+              type="Grid3d"),
+              result_grid_property=find_object (name="SGCR",
+              type="Grid3dProperty"),
+              discrete_output=False,
+              use_filter=False,
+              user_cut_for_filter=find_object (name="ZONE",
+              type="Grid3dProperty"),
+              filter_comparator=Comparator (rule="not_equals",
+              value=0),
+              formula="1-SWL-(0.7*(exp (-0.4475*PERMX^0.2223)))*(1-SWL)",
+              variables=variables)
+        end_wf_item (index = 7)
+
+
+        begin_wf_item (index = 8, name = "KRWR")
+        grid_property_calculator (mesh=find_object (name=resolve_variables_in_string (string_with_variables="@GRID_NAME@",
+              variables=variables),
+              type="Grid3d"),
+              result_grid_property=find_object (name="KRWR",
+              type="Grid3dProperty"),
+              discrete_output=False,
+              use_filter=False,
+              user_cut_for_filter=find_object (name="ZONE",
+              type="Grid3dProperty"),
+              filter_comparator=Comparator (rule="not_equals",
+              value=0),
+              formula=resolve_variables_in_string (string_with_variables="@KRWR@",
+              variables=variables),
+              variables=variables)
+        end_wf_item (index = 8)
+
+
+        begin_wf_item (index = 9, name = "KRWU")
+        grid_property_calculator (mesh=find_object (name=resolve_variables_in_string (string_with_variables="@GRID_NAME@",
+              variables=variables),
+              type="Grid3d"),
+              result_grid_property=find_object (name="KRWU",
+              type="Grid3dProperty"),
+              discrete_output=False,
+              use_filter=False,
+              user_cut_for_filter=find_object (name="ZONE",
+              type="Grid3dProperty"),
+              filter_comparator=Comparator (rule="not_equals",
+              value=0),
+              formula=resolve_variables_in_string (string_with_variables="@KRWR@+0.1",
+              variables=variables),
+              variables=variables)
+        end_wf_item (index = 9)
+
+
+        begin_wf_item (index = 10, name = "SOWCR")
+        grid_property_calculator (mesh=find_object (name=resolve_variables_in_string (string_with_variables="@GRID_NAME@",
+              variables=variables),
+              type="Grid3d"),
+              result_grid_property=find_object (name="SOWCR",
+              type="Grid3dProperty"),
+              discrete_output=False,
+              use_filter=False,
+              user_cut_for_filter=find_object (name="ZONE",
+              type="Grid3dProperty"),
+              filter_comparator=Comparator (rule="not_equals",
+              value=0),
+              formula="1-SWL-(0.0651*ln(PERMX)+0.4953)*(1-SWL)",
+              variables=variables)
+        end_wf_item (index = 10)
+
+
+        begin_wf_item (index = 11, name = "SWCR")
+        grid_property_calculator (mesh=find_object (name=resolve_variables_in_string (string_with_variables="@GRID_NAME@",
+              variables=variables),
+              type="Grid3d"),
+              result_grid_property=find_object (name="SWCR",
+              type="Grid3dProperty"),
+              discrete_output=False,
+              use_filter=False,
+              user_cut_for_filter=find_object (name="ZONE",
+              type="Grid3dProperty"),
+              filter_comparator=Comparator (rule="not_equals",
+              value=0),
+              formula=resolve_variables_in_string (string_with_variables="(PetroTypes==1)*(@SWCR_PER@*(1-SOWCR-SWL)+SWL)+\n(PetroTypes==2)*(0*(1-SOWCR-SWL)+SWL)+\n(PetroTypes==3)*(0*(1-SOWCR-SWL)+SWL)+(PetroTypes==4)*(@SWCR_PER2@*(1-SOWCR-SWL)+SWL)",
+              variables=variables),
+              variables=variables)
+        end_wf_item (index = 11)
+
+
+
+    end_wf_item (index = 4)
+
+
+    if False:
+        begin_wf_item (index = 13, name = "SOGCR_OLD")
+        grid_property_calculator (mesh=find_object (name=resolve_variables_in_string (string_with_variables="@GRID_NAME@",
+              variables=variables),
+              type="Grid3d"),
+              result_grid_property=find_object (name="SOGCR",
+              type="Grid3dProperty"),
+              discrete_output=False,
+              use_filter=False,
+              user_cut_for_filter=find_object (name="ZONE",
+              type="Grid3dProperty"),
+              filter_comparator=Comparator (rule="not_equals",
+              value=0),
+              formula="(PetroTypes==1)*0.119126+(\nPetroTypes==2)*0.119126+(PetroTypes==3)*0.5385*exp(-2.679*PERMX)+(PetroTypes==4)*0.5385*exp(-2.679*PERMX)",
+              variables=variables)
+        end_wf_item (index = 13)
+
+
+    begin_wf_item (index = 14, name = "SOGCR")
+    grid_property_calculator (mesh=find_object (name=resolve_variables_in_string (string_with_variables="@GRID_NAME@",
+          variables=variables),
+          type="Grid3d"),
+          result_grid_property=find_object (name="SOGCR",
+          type="Grid3dProperty"),
+          discrete_output=False,
+          use_filter=False,
+          user_cut_for_filter=find_object (name="ZONE",
+          type="Grid3dProperty"),
+          filter_comparator=Comparator (rule="not_equals",
+          value=0),
+          formula="1-SWL-(0.0462*ln(PERMX)+0.4207)*(1-SWL)",
+          variables=variables)
+    end_wf_item (index = 14)
+
+
+    begin_wf_item (index = 15)
+    grid_property_calculator (mesh=find_object (name=resolve_variables_in_string (string_with_variables="@GRID_NAME@",
+          variables=variables),
+          type="Grid3d"),
+          result_grid_property=find_object (name="KRORW",
+          type="Grid3dProperty"),
+          discrete_output=False,
+          use_filter=False,
+          user_cut_for_filter=find_object (name="ZONE",
+          type="Grid3dProperty"),
+          filter_comparator=Comparator (rule="not_equals",
+          value=0),
+          formula="(PetroTypes==1)*0.2795+(PetroTypes==2)*0.07433+(PetroTypes==3)*0.210784+(PetroTypes==4)*0.264343642",
+          variables=variables)
+    end_wf_item (index = 15)
+
+
+    begin_wf_item (index = 16)
+    grid_property_calculator (mesh=find_object (name=resolve_variables_in_string (string_with_variables="@GRID_NAME@",
+          variables=variables),
+          type="Grid3d"),
+          result_grid_property=find_object (name="KRORG",
+          type="Grid3dProperty"),
+          discrete_output=False,
+          use_filter=False,
+          user_cut_for_filter=find_object (name="ZONE",
+          type="Grid3dProperty"),
+          filter_comparator=Comparator (rule="not_equals",
+          value=0),
+          formula="(PetroTypes==1)*0.297915+(PetroTypes==2)*0.297915+(PetroTypes==3)*0.19378+(PetroTypes==4)*0.19378",
+          variables=variables)
+    end_wf_item (index = 16)
+
+
+    begin_wf_item (index = 17)
+    grid_property_calculator (mesh=find_object (name=resolve_variables_in_string (string_with_variables="@GRID_NAME@",
+          variables=variables),
+          type="Grid3d"),
+          result_grid_property=find_object (name="KRGR",
+          type="Grid3dProperty"),
+          discrete_output=False,
+          use_filter=False,
+          user_cut_for_filter=find_object (name="ZONE",
+          type="Grid3dProperty"),
+          filter_comparator=Comparator (rule="not_equals",
+          value=0),
+          formula="(PetroTypes==1)*0.407157+(PetroTypes==2)*0.407157+ (PetroTypes==3)*0.1416273\n+(PetroTypes==4)*0.1416273",
+          variables=variables)
+    end_wf_item (index = 17)
+
+
+    begin_wf_item (index = 18)
+    grid_property_calculator (mesh=find_object (name=resolve_variables_in_string (string_with_variables="@GRID_NAME@",
+          variables=variables),
+          type="Grid3d"),
+          result_grid_property=find_object (name="SATNUM",
+          type="Grid3dProperty"),
+          discrete_output=True,
+          use_filter=False,
+          user_cut_for_filter=find_object (name="ZONE",
+          type="Grid3dProperty"),
+          filter_comparator=Comparator (rule="not_equals",
+          value=0),
+          formula="if (round(if(PetroTypes==0, 1, PetroTypes))&gt;0,\nround(if(PetroTypes==0, 1, PetroTypes)),\n1)\n\n",
+          variables=variables)
+    end_wf_item (index = 18)
+
+
+    begin_wf_item (index = 19)
+    grid_property_calculator (mesh=find_object (name=resolve_variables_in_string (string_with_variables="@GRID_NAME@",
+          variables=variables),
+          type="Grid3d"),
+          result_grid_property=find_object (name="SGU",
+          type="Grid3dProperty"),
+          discrete_output=False,
+          use_filter=False,
+          user_cut_for_filter=find_object (name="ZONE",
+          type="Grid3dProperty"),
+          filter_comparator=Comparator (rule="not_equals",
+          value=0),
+          formula="1-SWL",
+          variables=variables)
+    end_wf_item (index = 19)
+
+
+    begin_wf_item (index = 20, name = "PCW_через зависимость")
+    grid_property_calculator (mesh=find_object (name=resolve_variables_in_string (string_with_variables="@GRID_NAME@",
+          variables=variables),
+          type="Grid3d"),
+          result_grid_property=find_object (name="PCW",
+          type="Grid3dProperty"),
+          discrete_output=False,
+          use_filter=False,
+          user_cut_for_filter=find_object (name="ZONE",
+          type="Grid3dProperty"),
+          filter_comparator=Comparator (rule="not_equals",
+          value=0),
+          formula="((PetroTypes==1)*0.012*(exp(24.256*PORO))+\n(PetroTypes==2)*0.002*(exp(40*PORO))+\n(PetroTypes==3)*0.98+\n(PetroTypes==4)*0.637)*\n35*0.318316*((PORO/PERMX)^0.5)",
+          variables=variables)
+    end_wf_item (index = 20)
+
+
+    begin_wf_item (index = 21, name = "PVTNUM")
+    grid_property_calculator (mesh=find_object (name=resolve_variables_in_string (string_with_variables="@GRID_NAME@",
+          variables=variables),
+          type="Grid3d"),
+          result_grid_property=find_object (name="PVTNUM",
+          type="Grid3dProperty"),
+          discrete_output=True,
+          use_filter=False,
+          user_cut_for_filter=find_object (name="ZONE",
+          type="Grid3dProperty"),
+          filter_comparator=Comparator (rule="not_equals",
+          value=0),
+          formula="(ZONE&lt;=5)+\n(ZONE&gt;5)*2",
+          variables=variables)
+    end_wf_item (index = 21)
+
+
+    if False:
+        begin_wf_item (index = 22, name = "PCW")
+        grid_property_calculator (mesh=find_object (name=resolve_variables_in_string (string_with_variables="@GRID_NAME@",
+              variables=variables),
+              type="Grid3d"),
+              result_grid_property=find_object (name="PCW",
+              type="Grid3dProperty"),
+              discrete_output=False,
+              use_filter=False,
+              user_cut_for_filter=find_object (name="ZONE",
+              type="Grid3dProperty"),
+              filter_comparator=Comparator (rule="not_equals",
+              value=0),
+              formula="((PetroTypes==1)*2.0+\n(PetroTypes==2)*1.9+\n(PetroTypes==3)*0.98+\n(PetroTypes==4)*0.637)*\n35*0.318316*((PORO/PERMX)^0.5)",
+              variables=variables)
+        end_wf_item (index = 22)
+
+
+    if False:
+        begin_wf_item (index = 23, name = "PCW")
+        grid_property_calculator (mesh=find_object (name=resolve_variables_in_string (string_with_variables="@GRID_NAME@",
+              variables=variables),
+              type="Grid3d"),
+              result_grid_property=find_object (name="PCW",
+              type="Grid3dProperty"),
+              discrete_output=False,
+              use_filter=False,
+              user_cut_for_filter=find_object (name="ZONE",
+              type="Grid3dProperty"),
+              filter_comparator=Comparator (rule="not_equals",
+              value=0),
+              formula="PCW*MULT_PW",
+              variables=variables)
+        end_wf_item (index = 23)
+
+
+    begin_wf_item (index = 24)
+    static_mapping (cases=find_object (name="SHORT_AREA",
+          type="Model_ex"),
+          grid=find_object (name=resolve_variables_in_string (string_with_variables="@GRID_NAME@",
+          variables=variables),
+          type="Grid3d"),
+          set_grid=True,
+          action="replace",
+          static_table=[{"description" : "ID_PERMZ", "keyword" : "PERMZ", "component" : None, "property" : find_object (name="PERMX",
+          type="Grid3dProperty"), "constant" : None, "porosity" : "matrix"}, {"description" : "ID_SWL", "keyword" : "SWL", "component" : None, "property" : find_object (name="SWL",
+          type="Grid3dProperty"), "constant" : None, "porosity" : "matrix"}, {"description" : "ID_KRGR", "keyword" : "KRGR", "component" : None, "property" : find_object (name="KRGR",
+          type="Grid3dProperty"), "constant" : None, "porosity" : "matrix"}, {"description" : "ID_KRORG", "keyword" : "KRORG", "component" : None, "property" : find_object (name="KRORG",
+          type="Grid3dProperty"), "constant" : None, "porosity" : "matrix"}, {"description" : "ID_SOWCR", "keyword" : "SOWCR", "component" : None, "property" : find_object (name="SOWCR",
+          type="Grid3dProperty"), "constant" : None, "porosity" : "matrix"}, {"description" : "ID_PERMY", "keyword" : "PERMY", "component" : None, "property" : find_object (name="PERMX",
+          type="Grid3dProperty"), "constant" : None, "porosity" : "matrix"}, {"description" : "ID_PERMX", "keyword" : "PERMX", "component" : None, "property" : find_object (name="PERMX",
+          type="Grid3dProperty"), "constant" : None, "porosity" : "matrix"}, {"description" : "ID_KRORW", "keyword" : "KRORW", "component" : None, "property" : find_object (name="KRORW",
+          type="Grid3dProperty"), "constant" : None, "porosity" : "matrix"}, {"description" : "ID_SATNUM", "keyword" : "SATNUM", "component" : None, "property" : find_object (name="SATNUM",
+          type="Grid3dProperty"), "constant" : None, "porosity" : "matrix"}, {"description" : "ID_EQLNUM", "keyword" : "EQLNUM", "component" : None, "property" : find_object (name="ZONE",
+          type="Grid3dProperty"), "constant" : None, "porosity" : "matrix"}, {"description" : "ID_NTG", "keyword" : "NTG", "component" : None, "property" : find_object (name="LITO",
+          type="Grid3dProperty"), "constant" : None, "porosity" : "matrix"}, {"description" : "ID_SWCR", "keyword" : "SWCR", "component" : None, "property" : find_object (name="SWCR",
+          type="Grid3dProperty"), "constant" : None, "porosity" : "matrix"}, {"description" : "ID_KRWR", "keyword" : "KRWR", "component" : None, "property" : find_object (name="KRWR",
+          type="Grid3dProperty"), "constant" : None, "porosity" : "matrix"}, {"description" : "ID_PCW", "keyword" : "PCW", "component" : None, "property" : find_object (name="PCW",
+          type="Grid3dProperty"), "constant" : None, "porosity" : "matrix"}, {"description" : "ID_SGU", "keyword" : "SGU", "component" : None, "property" : find_object (name="SGU",
+          type="Grid3dProperty"), "constant" : None, "porosity" : "matrix"}, {"description" : "ID_PORO", "keyword" : "PORO", "component" : None, "property" : find_object (name="PORO",
+          type="Grid3dProperty"), "constant" : None, "porosity" : "matrix"}, {"description" : "ID_SOGCR", "keyword" : "SOGCR", "component" : None, "property" : find_object (name="SOGCR",
+          type="Grid3dProperty"), "constant" : None, "porosity" : "matrix"}, {"description" : "ID_FIPXXX", "keyword" : "FIPNUM", "component" : None, "property" : find_object (name="FIPNUM",
+          type="Grid3dProperty"), "constant" : None, "porosity" : "matrix"}, {"description" : "ID_PVTNUM", "keyword" : "PVTNUM", "component" : None, "property" : find_object (name="PVTNUM",
+          type="Grid3dProperty"), "constant" : None, "porosity" : "matrix"}, {"description" : "ID_ARRXXX", "keyword" : "ARRPETROTYPES", "component" : None, "property" : find_object (name="PetroTypes",
+          type="Grid3dProperty"), "constant" : None, "porosity" : "matrix"}])
+    end_wf_item (index = 24)
+
+
+    begin_wf_item (index = 25)
+    adjust_equil_table (table_name="ach3",
+          datum_depth=3621,
+          datum_pressure=598.7,
+          woc_depth=arithmetic (expression="GOC_ACH3",
+          variables=variables),
+          woc_capillary_pressure=0,
+          goc_depth=arithmetic (expression="GOC_ACH3",
+          variables=variables),
+          goc_capillary_pressure=0,
+          live_black_oil=0,
+          wet_gas=0,
+          accuracy=None,
+          compos_init_type=None,
+          compos_press_type_on_contact=None)
+    end_wf_item (index = 25)
+
+
+    begin_wf_item (index = 26)
+    adjust_equil_table (table_name="ach4",
+          datum_depth=3621,
+          datum_pressure=598.7,
+          woc_depth=arithmetic (expression="GOC_ACH4",
+          variables=variables),
+          woc_capillary_pressure=0,
+          goc_depth=arithmetic (expression="GOC_ACH4",
+          variables=variables),
+          goc_capillary_pressure=0,
+          live_black_oil=0,
+          wet_gas=0,
+          accuracy=None,
+          compos_init_type=None,
+          compos_press_type_on_contact=None)
+    end_wf_item (index = 26)
+
+
+    begin_wf_item (index = 27)
+    adjust_equil_table (table_name="ach51",
+          datum_depth=3840,
+          datum_pressure=614,
+          woc_depth=arithmetic (expression="WOC_ACH51",
+          variables=variables),
+          woc_capillary_pressure=0,
+          goc_depth=arithmetic (expression="GOC_ACH51",
+          variables=variables),
+          goc_capillary_pressure=0,
+          live_black_oil=0,
+          wet_gas=0,
+          accuracy=None,
+          compos_init_type=None,
+          compos_press_type_on_contact=None)
+    end_wf_item (index = 27)
+
+
+    begin_wf_item (index = 28)
+    adjust_equil_table (table_name="ach52",
+          datum_depth=3774,
+          datum_pressure=610.41,
+          woc_depth=arithmetic (expression="GOC_ACH52",
+          variables=variables),
+          woc_capillary_pressure=0,
+          goc_depth=arithmetic (expression="GOC_ACH52",
+          variables=variables),
+          goc_capillary_pressure=0,
+          live_black_oil=0,
+          wet_gas=0,
+          accuracy=None,
+          compos_init_type=None,
+          compos_press_type_on_contact=None)
+    end_wf_item (index = 28)
+
+
+    if False:
+        begin_wf_item (index = 29)
+        schedule_mapping (cases=find_object (name="SHORT_AREA",
+              type="Model_ex"),
+              action="replace",
+              schedule_table=[{"strategy" : find_object (name=resolve_variables_in_string (string_with_variables="@STRAT@",
+              variables=variables),
+              type="gt_schedule_rules_data")}])
+        end_wf_item (index = 29)
+
+
+    if False:
+        begin_wf_item (index = 30)
+        grid_property_calculator (mesh=find_object (name="Cuted",
+              type="Grid3d"),
+              result_grid_property=find_object (name="Areas",
+              type="Grid3dProperty"),
+              discrete_output=False,
+              use_filter=False,
+              user_cut_for_filter=find_object (name="ZONE",
+              type="Grid3dProperty"),
+              filter_comparator=Comparator (rule="not_equals",
+              value=0),
+              formula="0",
+              variables=variables)
+        end_wf_item (index = 30)
+
+
+    if False:
+        begin_wf_item (index = 31)
+        grid_property_edit_inside_polygon (grid=find_object (name="Cuted",
+              type="Grid3d"),
+              grid_property=find_object (name="Areas",
+              type="Grid3dProperty"),
+              clear_values=False,
+              polygon=find_object (name="1A",
+              type="Curve3d"),
+              polygon_filter_rule="by_center",
+              position="inside",
+              stored_value=1,
+              use_filter_property=False,
+              filter_property=find_object (name="ZONE",
+              type="Grid3dProperty"),
+              comparator=Comparator (rule="not_equals",
+              value=0))
+        end_wf_item (index = 31)
+
+
+    if False:
+        begin_wf_item (index = 32)
+        grid_property_edit_inside_polygon (grid=find_object (name="Cuted",
+              type="Grid3d"),
+              grid_property=find_object (name="Areas",
+              type="Grid3dProperty"),
+              clear_values=False,
+              polygon=find_object (name="1A",
+              type="Curve3d"),
+              polygon_filter_rule="by_center",
+              position="inside",
+              stored_value=1,
+              use_filter_property=False,
+              filter_property=find_object (name="ZONE",
+              type="Grid3dProperty"),
+              comparator=Comparator (rule="not_equals",
+              value=0))
+        end_wf_item (index = 32)
+
+
+    if False:
+        begin_wf_item (index = 33)
+        grid_property_edit_inside_polygon (grid=find_object (name="Cuted",
+              type="Grid3d"),
+              grid_property=find_object (name="Areas",
+              type="Grid3dProperty"),
+              clear_values=False,
+              polygon=find_object (name="4A",
+              type="Curve3d"),
+              polygon_filter_rule="by_center",
+              position="inside",
+              stored_value=4,
+              use_filter_property=False,
+              filter_property=find_object (name="ZONE",
+              type="Grid3dProperty"),
+              comparator=Comparator (rule="not_equals",
+              value=0))
+        end_wf_item (index = 33)
+
+
+    if False:
+        begin_wf_item (index = 34)
+        grid_property_edit_inside_polygon (grid=find_object (name="Cuted",
+              type="Grid3d"),
+              grid_property=find_object (name="Areas",
+              type="Grid3dProperty"),
+              clear_values=False,
+              polygon=find_object (name="5A",
+              type="Curve3d"),
+              polygon_filter_rule="by_center",
+              position="inside",
+              stored_value=5,
+              use_filter_property=False,
+              filter_property=find_object (name="ZONE",
+              type="Grid3dProperty"),
+              comparator=Comparator (rule="not_equals",
+              value=0))
+        end_wf_item (index = 34)
+
+
+    if False:
+        begin_wf_item (index = 35)
+        grid_property_distance_to_contact (grid=find_object (name="Cuted",
+              type="Grid3d"),
+              contact=find_object (name="Contact",
+              type="Contact"),
+              grid_property=find_object (name="H_GWC",
+              type="Grid3dProperty"),
+              negative_values_control="zero",
+              ignore_cell_parts=False)
+        end_wf_item (index = 35)
+
+
+    begin_wf_item (index = 36)
+    schedule_rule_add_several_user_keywords (schedule_strategy=find_object (name="UNGKM_GDI",
+          type="gt_schedule_rules_data"),
+          date=datetime (year=2007,
+          month=5,
+          day=1,
+          hour=0,
+          minute=0,
+          second=0),
+          use_rule_name=True,
+          rule_name="Пользовательские кл. слова",
+          user_keywords="\nWPAVE\n /\n",
+          variables=variables)
+    end_wf_item (index = 36)
+
+
+</n>
+    <g name="guid">
+     <n name="guid" />
+     <a name="data" size="16">
+      <an name="0">
+       <n name="v">251</n>
+      </an>
+      <an name="1">
+       <n name="v">246</n>
+      </an>
+      <an name="2">
+       <n name="v">184</n>
+      </an>
+      <an name="3">
+       <n name="v">10</n>
+      </an>
+      <an name="4">
+       <n name="v">93</n>
+      </an>
+      <an name="5">
+       <n name="v">47</n>
+      </an>
+      <an name="6">
+       <n name="v">145</n>
+      </an>
+      <an name="7">
+       <n name="v">138</n>
+      </an>
+      <an name="8">
+       <n name="v">127</n>
+      </an>
+      <an name="9">
+       <n name="v">162</n>
+      </an>
+      <an name="10">
+       <n name="v">26</n>
+      </an>
+      <an name="11">
+       <n name="v">118</n>
+      </an>
+      <an name="12">
+       <n name="v">0</n>
+      </an>
+      <an name="13">
+       <n name="v">21</n>
+      </an>
+      <an name="14">
+       <n name="v">92</n>
+      </an>
+      <an name="15">
+       <n name="v">123</n>
+      </an>
+     </a>
+     <n name="type_original">gt_workflow</n>
+    </g>
+   </g>
+  </an>
+  <an name="1">
+   <g name="value">
+    <n name="module_type">gt_project</n>
+    <n name="project_name" />
+    <n name="is_independent">false</n>
+    <n name="wf_name">mult_creater</n>
+    <n name="wf_as_string">#  Этот файл был сгенерирован тНавигатор v23.4-5689-g1082f6c.
+#  Copyright (C) Рок Флоу Динамикс 2005-2024.
+#  Все права защищены.
+
+# This file is MACHINE GENERATED! Do not edit.
+
+#api_version=v0_0_117
+
+from __main__.tnav.workflow import *
+from tnav_debug_utilities import *
+from datetime import datetime, timedelta
+
+
+declare_workflow (workflow_name="mult_creater",
+      variables=[{"name" : "GRID", "type" : "string", "min" : 0, "max" : 1, "values" : ["Cuted", "ACHGAS"], "distribution_type" : "Discrete", "discrete_distr_values" : [0, 1], "discrete_distr_probabilities" : [50, 50], "initial_distribution" : [], "truncated_mean" : 0, "truncated_sigma" : 0, "mode" : 0}, {"name" : "MUTL_TABLE_NAME", "type" : "string", "min" : 0, "max" : 1, "values" : ["MULT_OFP", "MULT_PW"], "distribution_type" : "Discrete", "discrete_distr_values" : [0, 1], "discrete_distr_probabilities" : [50, 50], "initial_distribution" : [], "truncated_mean" : 0, "truncated_sigma" : 0, "mode" : 0}])
+
+
+mult_creater_variables = {
+"GRID" : "Cuted",
+"MUTL_TABLE_NAME" : "MULT_PW"
+}
+
+def mult_creater (variables = mult_creater_variables):
+    pass
+    check_launch_method ()
+
+    GRID = variables["GRID"]
+    MUTL_TABLE_NAME = variables["MUTL_TABLE_NAME"]
+
+    begin_user_imports ()
+    end_user_imports ()
+
+    begin_wf_item (index = 1, name = "Блок для формирования куба мультов")
+    comment_text ("""
+
+
+
+""")
+    end_wf_item (index = 1)
+
+
+    if False:
+        begin_wf_item (index = 2)
+        MUTL_TABLE_NAME = 'MULT_OFP'
+        set_var_type (n = "MUTL_TABLE_NAME", t = "STRING", it = "PY_EXPR", val = MUTL_TABLE_NAME)
+        variables["MUTL_TABLE_NAME"] = MUTL_TABLE_NAME
+
+        end_wf_item (index = 2)
+
+
+    if well_log_exists(name=MUTL_TABLE_NAME):
+        if_statement_contents ()
+        begin_wf_item (index = 3)
+
+
+        begin_wf_item (index = 4)
+        object_delete (object=absolute_object_name (name=None,
+              typed_names=[typed_object_name (obj_name=resolve_variables_in_string (string_with_variables="@MUTL_TABLE_NAME@",
+              variables=variables),
+              obj_type="WellLog")]),
+              ignore_if_not_exists=False)
+        end_wf_item (index = 4)
+
+
+        end_wf_item (index = 3)
+
+
+    begin_wf_item (index = 6, is_custom_code = True, name = "Create_melted_df")
+    import pandas as pd
+    import os
+
+    os.chdir(get_project_folder ())
+    df = pd.DataFrame(get_table_by_name (name=MUTL_TABLE_NAME).get_all_data())
+    df.columns = ['WELL', "ZONE", "TOP", "BOT", "MULT"]
+    df.BOT=df.BOT.apply(lambda x: float(x)-0.01 if x.replace(".","").isdigit() else x)
+    print(df.info())
+    df.drop(labels = [0],axis = 0, inplace=True)
+    df=df.melt(["WELL","ZONE","MULT"]).sort_values(by=['WELL','ZONE','value'])
+    df.replace('-', '-999.25', inplace=True)
+    print(df)
+    df.to_csv(f'{MUTL_TABLE_NAME}.txt')
+    end_wf_item (index = 6)
+
+
+    begin_wf_item (index = 7, is_custom_code = True, name = "Импорт кривых ГИС в формате ASCII таблица")
+    wells_log_import_table_format (wells=find_object (name="Wells",
+          type="gt_wells_entity"),
+          trajectories=find_object (name="Trajectories",
+          type="Trajectories"),
+          use_tags_to_assign=False,
+          tags_to_assign=[],
+          use_folder=False,
+          folder="",
+          splitter=True,
+          well_log_files_table=[{"file_name" : f"{MUTL_TABLE_NAME}.txt", "uname" : find_object (name=resolve_variables_in_string (string_with_variables="@MUTL_TABLE_NAME@",
+          variables=variables),
+          type="WellLog")}],
+          splitter2=True,
+          tabulator=TableFormat (separator="comma",
+          comment="#",
+          skip_lines=1,
+          columns=["skip", "Well", "skip", "Log Data", "skip", "MD"]),
+          splitter3=True,
+          well_choosing_type="from_column",
+          use_user_well_name=False,
+          user_well_name="Well_1",
+          is_log_name_from_file=True,
+          logs_table=[],
+          clear_same_name=False,
+          use_oem_encoding=False,
+          use_novalue=False,
+          novalue=-999.25,
+          elongate_traj=False)
+    end_wf_item (index = 7)
+
+
+    if False:
+        begin_wf_item (index = 8)
+        wells_log_import_table_format (wells=find_object (name="Wells",
+              type="gt_wells_entity"),
+              trajectories=find_object (name="Trajectories",
+              type="Trajectories"),
+              use_input_well_filter=False,
+              input_well_filter=find_object (name="AchDev",
+              type="WellFilter"),
+              use_global_wellname_mnemonics=False,
+              use_tags_to_assign=False,
+              tags_to_assign=[],
+              use_folder=False,
+              folder="",
+              splitter=True,
+              well_log_files_table=[{"file_name" : "MULT_OFP.txt", "uname" : find_object (name=resolve_variables_in_string (string_with_variables="@MUTL_TABLE_NAME@",
+              variables=variables),
+              type="WellLog")}],
+              splitter2=True,
+              tabulator=TableFormat (separator="comma",
+              comment="#",
+              skip_lines=1,
+              columns=["skip", "Well", "skip", "Log Data", "skip", "MD"]),
+              splitter3=True,
+              well_choosing_type="from_column",
+              use_user_well_name=False,
+              user_well_name="Well_1",
+              is_log_name_from_file=True,
+              logs_table=[],
+              clear_same_name=False,
+              use_oem_encoding=False,
+              use_novalue=False,
+              novalue=-999.25,
+              elongate_traj=False)
+        end_wf_item (index = 8)
+
+
+    begin_wf_item (index = 9)
+    wells_log_set_interpolation_mode (interpolation_mode="discrete",
+          wells_logs=[{"wells_log" : find_object (name=resolve_variables_in_string (string_with_variables="@MUTL_TABLE_NAME@",
+          variables=variables),
+          type="WellLog")}])
+    end_wf_item (index = 9)
+
+
+    begin_wf_item (index = 10)
+    wells_log_resample (wells=find_object (name="Wells",
+          type="gt_wells_entity"),
+          use_well_filter=False,
+          well_filter=find_object (name="Import Model Well Filter(BLACK_OIL_DEMO)",
+          type="WellFilter"),
+          source_log=find_object (name=resolve_variables_in_string (string_with_variables="@MUTL_TABLE_NAME@",
+          variables=variables),
+          type="WellLog"),
+          target_log=find_object (name=resolve_variables_in_string (string_with_variables="@MUTL_TABLE_NAME@",
+          variables=variables),
+          type="WellLog"),
+          step=0.1)
+    end_wf_item (index = 10)
+
+
+    begin_wf_item (index = 11)
+    create_blocked_well_log (mesh=find_object (name=resolve_variables_in_string (string_with_variables="@GRID@",
+          variables=variables),
+          type="Grid3d"),
+          BlockedWells=find_object (name=resolve_variables_in_string (string_with_variables="@MUTL_TABLE_NAME@",
+          variables=variables),
+          type="BlockedWells"),
+          use_well_filter=True,
+          well_filter=find_object (name="target_area",
+          type="WellFilter"),
+          use_filter=False,
+          user_cut=find_object (name="ACTNUM",
+          type="Grid3dProperty"),
+          comparator=Comparator (rule="not_equals",
+          value=0),
+          input_log=find_object (name=resolve_variables_in_string (string_with_variables="@MUTL_TABLE_NAME@",
+          variables=variables),
+          type="WellLog"),
+          use_override_discreteness=True,
+          override_discreteness="discrete",
+          averaging_method="minimum",
+          averaging_power=0,
+          random_seed=0,
+          kernel_bandwidth=0.5,
+          treat_log_as="points",
+          use_min_points_in_block=False,
+          min_points_in_block=3,
+          use_min_interval_in_block=False,
+          min_interval_in_block=0.1,
+          use_bias=False,
+          bias_blocked_wells=find_object (name="MULT",
+          type="BlockedWells"),
+          bias_log_data=find_object (name="ZONES",
+          type="WellLog"),
+          use_weights=False,
+          weights_table=[],
+          wells=find_object (name="Wells",
+          type="gt_wells_entity"),
+          greedy_algorithm_type="universal",
+          use_threshold=False,
+          threshold=0.2,
+          use_dynamic_priority=False,
+          use_min_window_size=False,
+          min_window_size=1,
+          use_max_window_size=False,
+          max_window_size=10,
+          clear_all_values=True)
+    end_wf_item (index = 11)
+
+
+    if False:
+        begin_wf_item (index = 12)
+        grid_property_interpolate_by_blocked_wells_trivial_3d (mesh=find_object (name="BLACK_OIL_DEMO",
+              type="Grid3d"),
+              blocked_wells=find_object (name="MULT",
+              type="BlockedWells"),
+              clear_values=True,
+              use_default_value=False,
+              default_value=0,
+              result_grid_property=find_object (name="MULT",
+              type="Grid3dProperty"))
+        end_wf_item (index = 12)
+
+
+    begin_wf_item (index = 13)
+    grid_property_interpolate_by_wells_log_3d (mesh=find_object (name=resolve_variables_in_string (string_with_variables="@GRID@",
+          variables=variables),
+          type="Grid3d"),
+          input_data_type="blocked_wells",
+          input_partial_cube=find_object (name=resolve_variables_in_string (string_with_variables="@MUTL_TABLE_NAME@",
+          variables=variables),
+          type="InitialBlocks"),
+          blocked_wells=find_object (name=resolve_variables_in_string (string_with_variables="@MUTL_TABLE_NAME@",
+          variables=variables),
+          type="BlockedWells"),
+          not_use_blocked_wells=False,
+          statistics=find_object (name="Statistics",
+          type="BlockedWellsStatistics"),
+          initial_blocks_statistics=find_object (name="",
+          type="BlockedWellsStatistics"),
+          result_grid_property=find_object (name=resolve_variables_in_string (string_with_variables="@MUTL_TABLE_NAME@",
+          variables=variables),
+          type="Grid3dProperty"),
+          use_kriging_variance=False,
+          kriging_variance_grid_property=find_object (name="ACTNUM",
+          type="Grid3dProperty"),
+          space_type="ijk",
+          use_filter=False,
+          user_cut=find_object (name="ACTNUM",
+          type="Grid3dProperty"),
+          comparator=Comparator (rule="not_equals",
+          value=0),
+          fade_to_border=False,
+          use_global_random_seed=False,
+          global_random_seed=0,
+          advanced_options=False,
+          with_lgr=False,
+          clear_values=True,
+          keep_source_values=True,
+          compatibility_options=False,
+          whole_grid_random=True,
+          use_random_process=True,
+          use_compatibility_sum_in_sgs=False,
+          use_north_in_ijk_space=False,
+          optimize_memory_usage=False,
+          use_random_process_grfs=False,
+          use_transformed_equations_kriging=False,
+          use_zero_mean_for_kriging_in_grfs=False,
+          i3_params=Interpolation3dParameters (zone_region_filter=ZoneRegionFilterInfo (use_zone=False,
+          use_region=False,
+          zone=find_object (name="Property1",
+          type="Grid3dProperty"),
+          region=find_object (name="Property1",
+          type="Grid3dProperty")),
+          zone_region_filter_args=ZoneRegionFilter (zone=None,
+          region=None),
+          ZoneRegionParameters=[ZoneRegionParameters (use=True,
+          zone=None,
+          region=None,
+          facies_order=[],
+          current_facies=None,
+          restrict=ContactParameters (restriction_type="none",
+          secondary_attribute=find_object (name="Z_size",
+          type="Grid3dProperty"),
+          m_use_da_cond_distr=False,
+          use_contact_restriction=False,
+          contact=find_object (name="",
+          type=""),
+          use_contact_horizon=False,
+          contact_horizon=find_object (name="",
+          type=""),
+          contact_map_total=find_object (name="",
+          type="")),
+          parameters=[ZoneRegionFaciesParameters (facies=None,
+          params=InterpolationParametersItem (use=True,
+          interpolator_type="kriging",
+          kriging_params=KrigingParameters (kriging_type="simple",
+          global_mean=0,
+          use_global_mean=False,
+          use_kriging_points=True,
+          kriging_points=50,
+          use_groups=False,
+          points_in_group=1000,
+          random_seed=0,
+          kriging_mean_grfs=0,
+          use_kriging_mean_grfs=False),
+          cokriging_params=CokrigingParameters (use_cokriging=False,
+          collocated_coeff=0.5,
+          source_type="none",
+          source_3d=find_object (name="Property1",
+          type="Grid3dProperty"),
+          source_2d=find_object (name="",
+          type="Map2d"),
+          source_1d=find_object (name="",
+          type="Function1d")),
+          trend=TrendParameters (use_da_transformations=False,
+          trend_type="none",
+          trend_3d=find_object (name="Property1",
+          type="Grid3dProperty"),
+          trend_2d=find_object (name="2D-Map2",
+          type="Map2d"),
+          combination_type="multiplication",
+          do_normalize_vpc=True,
+          vpc_source="recalc",
+          do_normalize=False,
+          smooth_cutoff_maps=False,
+          cutoff_maps_smooth_radius=0),
+          variogram=VariogramParameters (variogram_type="exponential",
+          sill=0.007813617393652052,
+          nugget_effect=0,
+          range_main=1500,
+          range_normal=1500,
+          range_vertical=1.2,
+          azimuth=0,
+          dip=0,
+          azimuth_map=find_object (name="",
+          type="Map2d"),
+          use_azimuth_map=False,
+          external_source=False,
+          space_type="xyz",
+          sill_map=find_object (name="",
+          type=""),
+          use_sill_map=False,
+          source_object=find_object (name="",
+          type="")),
+          distribution=DistributionParameters (use_da=False,
+          distribution_type="blocked_well",
+          well_log=find_object (name="",
+          type="WellLog"),
+          log_from_blocked_wells=True,
+          declustering_weights=find_object (name=resolve_variables_in_string (string_with_variables="@MUTL_TABLE_NAME@",
+          variables=variables),
+          type="BlockedWellsAttribute"),
+          use_declustering_weights=False,
+          mean_normal=0,
+          mean_log_normal=1.6487212707001283,
+          mean_beta=1,
+          sdev_normal=1,
+          sdev_log_normal=2.1611974158950879,
+          sdev_beta=1,
+          use_shift_stretch_from_input=True,
+          distribution_after_trend=False,
+          shift_beta=0,
+          stretch_beta=1,
+          min_uniform=0,
+          max_uniform=1,
+          adjust_type_continuous="cut_by_bounds",
+          hard_adjust=False,
+          fit_to_user_defined=False,
+          input_trunc_use_min=False,
+          input_trunc_use_max=False,
+          input_trunc_min=0,
+          input_trunc_max=0,
+          input_trunc_type="clamp",
+          output_trunc_use_min=False,
+          output_trunc_use_max=False,
+          output_trunc_min=1,
+          output_trunc_max=0,
+          output_trunc_type="clamp"),
+          fraction=FractionParameters (fraction_source="none",
+          fraction_value=0,
+          is_fraction_freezed=False,
+          use_declustering_weights=False,
+          weights_uid=find_object (name="",
+          type=""),
+          use_distribution_fitting=False),
+          restrictions=RestrictionsParameters (contact_restriction_map=find_object (name="",
+          type=""),
+          restriction_map=find_object (name="",
+          type=""),
+          vpc_source="recalc"),
+          amazonas=AmazonasParameters (major_axis_src_type="value",
+          major_semi_axis=250,
+          major_semi_axis_blocks=5,
+          major_semi_axis_map=find_object (name="",
+          type=""),
+          lateral_anizotropy=False,
+          major_minor_src_type="value",
+          major_minor_ratio=1,
+          major_minor_ratio_map=find_object (name="",
+          type=""),
+          azimuth_src_type="value",
+          azimuth=0,
+          azimuth_map=find_object (name="",
+          type=""),
+          vertical_axis_src_type="map",
+          vertical_semi_axis=5,
+          vertical_semi_axis_blocks=2,
+          dip=0,
+          random_seed=0,
+          aposteriori_drift_src_type="value",
+          aposteriori_drift=0.0001,
+          noise_map=find_object (name="",
+          type=""),
+          advanced_params=False,
+          axis_units_src_type="length",
+          use_apriori_drift=False,
+          apriori_drift=0,
+          min_threshold=5,
+          src_points_weight=5,
+          amazonas_stat_type="median",
+          kernel_bandwidth=0.5),
+          trivial_params=TrivialParameters (value=0)))],
+          pgs_parameters=[InterpolationParametersItem (use=False,
+          interpolator_type="sgs",
+          kriging_params=KrigingParameters (kriging_type="simple",
+          global_mean=0,
+          use_global_mean=False,
+          use_kriging_points=True,
+          kriging_points=50,
+          use_groups=False,
+          points_in_group=1000,
+          random_seed=0,
+          kriging_mean_grfs=0,
+          use_kriging_mean_grfs=True),
+          cokriging_params=CokrigingParameters (use_cokriging=False,
+          collocated_coeff=0.5,
+          source_type="none",
+          source_3d=find_object (name="",
+          type=""),
+          source_2d=find_object (name="",
+          type=""),
+          source_1d=find_object (name="",
+          type="")),
+          trend=TrendParameters (use_da_transformations=False,
+          trend_type="none",
+          trend_3d=find_object (name="",
+          type=""),
+          trend_2d=find_object (name="",
+          type=""),
+          combination_type="multiplication",
+          do_normalize_vpc=True,
+          vpc_source="recalc",
+          do_normalize=False,
+          smooth_cutoff_maps=False,
+          cutoff_maps_smooth_radius=0),
+          variogram=VariogramParameters (variogram_type="exponential",
+          sill=1,
+          nugget_effect=0,
+          range_main=1,
+          range_normal=1,
+          range_vertical=1,
+          azimuth=0,
+          dip=0,
+          azimuth_map=find_object (name="",
+          type=""),
+          use_azimuth_map=False,
+          external_source=False,
+          space_type="xyz",
+          sill_map=find_object (name="",
+          type=""),
+          use_sill_map=False,
+          source_object=find_object (name="",
+          type="")),
+          distribution=DistributionParameters (use_da=False,
+          distribution_type="none",
+          well_log=find_object (name="",
+          type=""),
+          log_from_blocked_wells=True,
+          declustering_weights=find_object (name="",
+          type=""),
+          use_declustering_weights=False,
+          mean_normal=0,
+          mean_log_normal=0,
+          mean_beta=1,
+          sdev_normal=1,
+          sdev_log_normal=1,
+          sdev_beta=1,
+          use_shift_stretch_from_input=True,
+          distribution_after_trend=True,
+          shift_beta=0,
+          stretch_beta=1,
+          min_uniform=0,
+          max_uniform=1,
+          adjust_type_continuous="none",
+          hard_adjust=False,
+          fit_to_user_defined=False,
+          input_trunc_use_min=False,
+          input_trunc_use_max=False,
+          input_trunc_min=0,
+          input_trunc_max=0,
+          input_trunc_type="clamp",
+          output_trunc_use_min=False,
+          output_trunc_use_max=False,
+          output_trunc_min=0,
+          output_trunc_max=0,
+          output_trunc_type="clamp"),
+          fraction=FractionParameters (fraction_source="none",
+          fraction_value=0,
+          is_fraction_freezed=False,
+          use_declustering_weights=False,
+          weights_uid=find_object (name="",
+          type=""),
+          use_distribution_fitting=False),
+          restrictions=RestrictionsParameters (contact_restriction_map=find_object (name="",
+          type=""),
+          restriction_map=find_object (name="",
+          type=""),
+          vpc_source="recalc"),
+          amazonas=AmazonasParameters (major_axis_src_type="value",
+          major_semi_axis=250,
+          major_semi_axis_blocks=5,
+          major_semi_axis_map=find_object (name="",
+          type=""),
+          lateral_anizotropy=False,
+          major_minor_src_type="value",
+          major_minor_ratio=1,
+          major_minor_ratio_map=find_object (name="",
+          type=""),
+          azimuth_src_type="value",
+          azimuth=0,
+          azimuth_map=find_object (name="",
+          type=""),
+          vertical_axis_src_type="map",
+          vertical_semi_axis=5,
+          vertical_semi_axis_blocks=2,
+          dip=0,
+          random_seed=0,
+          aposteriori_drift_src_type="value",
+          aposteriori_drift=0.0001,
+          noise_map=find_object (name="",
+          type=""),
+          advanced_params=False,
+          axis_units_src_type="length",
+          use_apriori_drift=False,
+          apriori_drift=0,
+          min_threshold=5,
+          src_points_weight=5,
+          amazonas_stat_type="median",
+          kernel_bandwidth=0.5),
+          trivial_params=TrivialParameters (value=0)), InterpolationParametersItem (use=False,
+          interpolator_type="sgs",
+          kriging_params=KrigingParameters (kriging_type="simple",
+          global_mean=0,
+          use_global_mean=False,
+          use_kriging_points=True,
+          kriging_points=50,
+          use_groups=False,
+          points_in_group=1000,
+          random_seed=1,
+          kriging_mean_grfs=0,
+          use_kriging_mean_grfs=True),
+          cokriging_params=CokrigingParameters (use_cokriging=False,
+          collocated_coeff=0.5,
+          source_type="none",
+          source_3d=find_object (name="",
+          type=""),
+          source_2d=find_object (name="",
+          type=""),
+          source_1d=find_object (name="",
+          type="")),
+          trend=TrendParameters (use_da_transformations=False,
+          trend_type="none",
+          trend_3d=find_object (name="",
+          type=""),
+          trend_2d=find_object (name="",
+          type=""),
+          combination_type="multiplication",
+          do_normalize_vpc=True,
+          vpc_source="recalc",
+          do_normalize=False,
+          smooth_cutoff_maps=False,
+          cutoff_maps_smooth_radius=0),
+          variogram=VariogramParameters (variogram_type="exponential",
+          sill=1,
+          nugget_effect=0,
+          range_main=1,
+          range_normal=1,
+          range_vertical=1,
+          azimuth=0,
+          dip=0,
+          azimuth_map=find_object (name="",
+          type=""),
+          use_azimuth_map=False,
+          external_source=False,
+          space_type="xyz",
+          sill_map=find_object (name="",
+          type=""),
+          use_sill_map=False,
+          source_object=find_object (name="",
+          type="")),
+          distribution=DistributionParameters (use_da=False,
+          distribution_type="none",
+          well_log=find_object (name="",
+          type=""),
+          log_from_blocked_wells=False,
+          declustering_weights=find_object (name="",
+          type=""),
+          use_declustering_weights=False,
+          mean_normal=0,
+          mean_log_normal=0,
+          mean_beta=1,
+          sdev_normal=1,
+          sdev_log_normal=1,
+          sdev_beta=1,
+          use_shift_stretch_from_input=True,
+          distribution_after_trend=True,
+          shift_beta=0,
+          stretch_beta=1,
+          min_uniform=0,
+          max_uniform=1,
+          adjust_type_continuous="none",
+          hard_adjust=False,
+          fit_to_user_defined=False,
+          input_trunc_use_min=False,
+          input_trunc_use_max=False,
+          input_trunc_min=0,
+          input_trunc_max=0,
+          input_trunc_type="clamp",
+          output_trunc_use_min=False,
+          output_trunc_use_max=False,
+          output_trunc_min=0,
+          output_trunc_max=0,
+          output_trunc_type="clamp"),
+          fraction=FractionParameters (fraction_source="none",
+          fraction_value=0,
+          is_fraction_freezed=False,
+          use_declustering_weights=False,
+          weights_uid=find_object (name="",
+          type=""),
+          use_distribution_fitting=False),
+          restrictions=RestrictionsParameters (contact_restriction_map=find_object (name="",
+          type=""),
+          restriction_map=find_object (name="",
+          type=""),
+          vpc_source="recalc"),
+          amazonas=AmazonasParameters (major_axis_src_type="value",
+          major_semi_axis=250,
+          major_semi_axis_blocks=5,
+          major_semi_axis_map=find_object (name="",
+          type=""),
+          lateral_anizotropy=False,
+          major_minor_src_type="value",
+          major_minor_ratio=1,
+          major_minor_ratio_map=find_object (name="",
+          type=""),
+          azimuth_src_type="value",
+          azimuth=0,
+          azimuth_map=find_object (name="",
+          type=""),
+          vertical_axis_src_type="map",
+          vertical_semi_axis=5,
+          vertical_semi_axis_blocks=2,
+          dip=0,
+          random_seed=0,
+          aposteriori_drift_src_type="value",
+          aposteriori_drift=0.0001,
+          noise_map=find_object (name="",
+          type=""),
+          advanced_params=False,
+          axis_units_src_type="length",
+          use_apriori_drift=False,
+          apriori_drift=0,
+          min_threshold=5,
+          src_points_weight=5,
+          amazonas_stat_type="median",
+          kernel_bandwidth=0.5),
+          trivial_params=TrivialParameters (value=0))],
+          pgs_interpolation_orientation=False,
+          pgs_truncation_strategy=TruncationStrategy (all_nodes=[TruncationStrategyNode (orientation=False,
+          facies=[],
+          rect_for_paint=[2, 2, 251, 251],
+          is_filled=False,
+          child_indexes=[])]),
+          use_trend_from_da=False,
+          smooth_da_trend=False,
+          smooth_step_cnt=10,
+          smooth_alpha=0.5,
+          use_da_trend_fractions=False)],
+          apply_to_all_zr=False,
+          apply_to_all_f=False))
+    end_wf_item (index = 13)
+
+
+</n>
+    <g name="guid">
+     <n name="guid" />
+     <a name="data" size="16">
+      <an name="0">
+       <n name="v">9</n>
+      </an>
+      <an name="1">
+       <n name="v">195</n>
+      </an>
+      <an name="2">
+       <n name="v">21</n>
+      </an>
+      <an name="3">
+       <n name="v">233</n>
+      </an>
+      <an name="4">
+       <n name="v">79</n>
+      </an>
+      <an name="5">
+       <n name="v">163</n>
+      </an>
+      <an name="6">
+       <n name="v">20</n>
+      </an>
+      <an name="7">
+       <n name="v">57</n>
+      </an>
+      <an name="8">
+       <n name="v">55</n>
+      </an>
+      <an name="9">
+       <n name="v">235</n>
+      </an>
+      <an name="10">
+       <n name="v">10</n>
+      </an>
+      <an name="11">
+       <n name="v">28</n>
+      </an>
+      <an name="12">
+       <n name="v">222</n>
+      </an>
+      <an name="13">
+       <n name="v">98</n>
+      </an>
+      <an name="14">
+       <n name="v">56</n>
+      </an>
+      <an name="15">
+       <n name="v">253</n>
+      </an>
+     </a>
+     <n name="type_original">gt_workflow</n>
+    </g>
+   </g>
+  </an>
+ </a>
+</root>
